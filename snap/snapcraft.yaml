@@ -1,0 +1,38 @@
+name: gtk-theme-elementary
+build-base: core24
+base: bare
+version: '8'
+platforms:
+  all:
+    build-on: [amd64]
+    build-for: [all]
+summary: Elementary GTK theme
+description: |
+  A Snap that allows you to use Elementary GTK themes in Snap apps
+grade: stable
+confinement: strict
+
+slots:
+  gtk-3-themes:
+    interface: content
+    source:
+      read:
+        - $SNAP/share/themes/io.elementary.stylesheet.banana
+        - $SNAP/share/themes/io.elementary.stylesheet.blueberry
+        - $SNAP/share/themes/io.elementary.stylesheet.bubblegum
+        - $SNAP/share/themes/io.elementary.stylesheet.cocoa
+        - $SNAP/share/themes/io.elementary.stylesheet.grape
+        - $SNAP/share/themes/io.elementary.stylesheet.lime
+        - $SNAP/share/themes/io.elementary.stylesheet.mint
+        - $SNAP/share/themes/io.elementary.stylesheet.orange
+        - $SNAP/share/themes/io.elementary.stylesheet.slate
+        - $SNAP/share/themes/io.elementary.stylesheet.strawberry
+parts:
+  gtk-3-themes:
+    plugin: dump
+    source: https://github.com/Kyuyrii/gtk-theme-elementary/releases/download/gtk-theme-elementary/elementary_os_8-gtk_themes.zip
+    organize:
+      gtk-themes: share/themes
+    prime:
+      - share/themes/*/gtk-3.0
+      - share/themes/*/gtk-4.0
