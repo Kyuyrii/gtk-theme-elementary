@@ -22,6 +22,7 @@ slots:
         - $SNAP/share/themes/io.elementary.stylesheet.bubblegum
         - $SNAP/share/themes/io.elementary.stylesheet.cocoa
         - $SNAP/share/themes/io.elementary.stylesheet.grape
+        - $SNAP/share/themes/io.elementary.stylesheet.latte
         - $SNAP/share/themes/io.elementary.stylesheet.lime
         - $SNAP/share/themes/io.elementary.stylesheet.mint
         - $SNAP/share/themes/io.elementary.stylesheet.orange
