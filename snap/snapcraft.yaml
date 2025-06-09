@@ -30,9 +30,9 @@ slots:
 parts:
   gtk-3-themes:
     plugin: dump
-    source: https://github.com/Kyuyrii/gtk-theme-elementary/releases/download/gtk-theme-elementary/elementary_os_8-gtk_themes.zip
+    source: https://github.com/Kyuyrii/gtk-theme-elementary-snap/releases/download/gtk-theme-elementary/io.elementary.stylesheet_8.2.1+r608+pkg342.ubuntu8.1_all.deb
     organize:
-      gtk-themes: share/themes
+      usr/share/themes: share/themes
     prime:
       - share/themes/*/gtk-3.0
       - share/themes/*/gtk-4.0
